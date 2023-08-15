@@ -1,4 +1,82 @@
 baseURL = "https://kevinchen1994.github.io/"
 languageCode = "en-us"
+
+author = "KevinChen"
+DefaultContentLanguage = "zh"
+paginate = 20
+ignoreErrors = ["error-remote-getjson"]
+enableInlineShortcodes = true
+
+
 title = "厨师海森堡的厨房"
 theme = "paper"
+
+[params]
+  color = 'linen'
+
+  
+  github = 'kevinchen1994'
+
+  avatar = 'notion://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fpublic.notion-static.com%2F08b094d9-22c2-4ac8-8ff0-eb7b50eed3e0%2Fnotion-avatar-1678713535269.png?table=space&id=d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6&spaceId=d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6&width=60&userId=cc08a802-cdc1-4040-b261-957206a41bd5&cache=v2'
+  name = 'KevinChen'
+  bio = '👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer'
+
+# ------------------------------
+# 配置杂项misc
+disableHLJS = true
+math = true  
+
+# 正确配置 markup 解析设置，防止原始 html标签 被过滤。
+# ------------------------------
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [asciidocExt]
+    backend = 'html5'
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]  
+  [markup.goldmark]
+    [goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [goldmark.parser]
+        autoHeadingID = true
+        autoHeadingIDType = 'github'
+        [goldmark.parser.attribute]
+          block = false
+          title = true
+ # whether to use HTML tags directly in the document
+ # 是否在文档中直接使用 HTML 标签
+      [markup.goldmark.renderer]
+        unsafe = true
+        hardWraps = false
+        xhtml = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+# ------------------------------
+# 配置网站菜单
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "friends"
+    name = "Friends"
+    url = "/friends/"
+    weight = 10
