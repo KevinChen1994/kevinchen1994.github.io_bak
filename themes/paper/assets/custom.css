@@ -1,0 +1,35 @@
+/* Place custom css here. */
+
+/*20230815添加 维护list，添加缩略图类*/
+.summarysctnbox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    gap: 24px;
+    margin-bottom: 1em;
+  }
+
+.ctntext{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+/*20230815 将摘要作为自定义 CSS*/
+.summaryspar{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* 设置最大行数 */  
+    margin-bottom: 0;
+}
+
+.rightimg{
+  margin: 0px;
+  flex: 0 0 30%; /* 占据 30% 的宽度，不会扩展或收缩 */
+  max-width: 30%; /* 设置最大宽度为 30% */
+  max-height: 120px;
+  height: auto; /* 高度会根据宽度和图片比例自适应 */
+  border-radius: 8px;
+}
