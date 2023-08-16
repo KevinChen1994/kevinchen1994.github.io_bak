@@ -75,8 +75,8 @@ math = true
     name = "About"
     url = "/about/"
     weight = 10
-  [[menu.main]]
-    identifier = "friends"
-    name = "Friends"
-    url = "/friends/"
-    weight = 10
+#  [[menu.main]]
+#    identifier = "friends"
+#    name = "Friends"
+#    url = "/friends/"
+#    weight = 10

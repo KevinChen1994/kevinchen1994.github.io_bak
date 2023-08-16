@@ -1,10 +1,20 @@
 # Notion-Hugo
+- [Notion-Hugo](#notion-hugo)
+  - [Get Started- Notion-Hugo](#get-started--notion-hugo)
+    - [Create a new GitHub repository from this template](#create-a-new-github-repository-from-this-template)
+    - [Create a Notion integration](#create-a-notion-integration)
+    - [Setup secrets for GitHub Action](#setup-secrets-for-github-action)
+    - [Duplicate the Notion Template](#duplicate-the-notion-template)
+    - [Add connection to the Notion Page](#add-connection-to-the-notion-page)
+    - [Configure you Hugo site](#configure-you-hugo-site)
+  - [Next Step](#next-step)
+  - [License](#license)
 
 ![image](https://user-images.githubusercontent.com/52968553/188502839-1de28ae0-6111-4387-99fe-fbc7d87dbc4c.png)
 
 Notion-Hugo allows you to use [Notion](https://www.notion.so/) as your CMS and deploy your pages as a static website with [Hugo](https://gohugo.io/). So you have the full power of Notion for creating new content, with Hugo and its wonderful [ecosystem of themes](https://themes.gohugo.io/) take care of the rest for you.
 
-## Get Started
+## Get Started- [Notion-Hugo](#notion-hugo)
 
 ### Create a new GitHub repository from this template
 
