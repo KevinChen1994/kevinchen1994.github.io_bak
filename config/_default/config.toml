@@ -14,59 +14,20 @@ theme = "paper"
 [params]
   color = 'linen'
 
-  
   github = 'kevinchen1994'
 
   avatar = 'https://s1.ax1x.com/2023/08/15/pPQAI4H.png'
   name = 'KevinChen'
   bio = '👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer'
 
-# ------------------------------
-# 配置杂项misc
-disableHLJS = true
-math = true  
+  # misc
+  disableHLJS = true                        # disable highlight.js
+  monoDarkIcon = true                       # show monochrome dark 
 
-# 正确配置 markup 解析设置，防止原始 html标签 被过滤。
-# ------------------------------
+  comments = true                            # disable comments for a specific page
+  math = true                                 # enable KaTex math typesetting for a specific page
 
-[markup]
-  defaultMarkdownHandler = 'goldmark'
-  [asciidocExt]
-    backend = 'html5'
-    failureLevel = 'fatal'
-    noHeaderOrFooter = true
-    preserveTOC = false
-    safeMode = 'unsafe'
-    sectionNumbers = false
-    trace = false
-    verbose = false
-    workingFolderCurrent = false
-    [markup.asciidocExt.attributes]  
-  [markup.goldmark]
-    [goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [goldmark.parser]
-        autoHeadingID = true
-        autoHeadingIDType = 'github'
-        [goldmark.parser.attribute]
-          block = false
-          title = true
- # whether to use HTML tags directly in the document
- # 是否在文档中直接使用 HTML 标签
-      [markup.goldmark.renderer]
-        unsafe = true
-        hardWraps = false
-        xhtml = false
-  [markup.tableOfContents]
-    endLevel = 3
-    ordered = false
-    startLevel = 2
+
 # ------------------------------
 # 配置网站菜单
 [menu]
