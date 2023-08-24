@@ -23,8 +23,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     url = "/tags/"
     weight = 2
   [[menu.main]]
-    identifier = "类别"
-    name = "Categories"
+    identifier = "categories"
+    name = "类别"
     url = "/categories/"
     weight = 3
   [[menu.main]]
