@@ -1,5 +1,7 @@
 baseURL = "https://kevinchen1994.github.io/"
 languageCode = "en-us"
+title = "厨师海森堡的厨房"
+theme = "Dolt"
 
 author = "KevinChen"
 DefaultContentLanguage = "zh"
@@ -8,34 +10,27 @@ ignoreErrors = ["error-remote-getjson"]
 enableInlineShortcodes = true
 
 
-title = "厨师海森堡的厨房"
-theme = "paper"
-
-[params]
-  color = 'linen'
-
-  github = 'kevinchen1994'
-
-  avatar = 'https://s1.ax1x.com/2023/08/15/pPQAI4H.png'
-  name = 'KevinChen'
-  bio = '👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer'
-
+# paper 配置
+#[params]
+#  color = 'linen'
+#  github = 'kevinchen1994'
+#  avatar = 'https://s1.ax1x.com/2023/08/15/pPQAI4H.png'
+#  name = 'KevinChen'
+#  bio = '👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer'
   # misc
-  disableHLJS = true                        # disable highlight.js
-  monoDarkIcon = true                       # show monochrome dark 
-
-  comments = true                            # disable comments for a specific page
-  math = true                                 # enable KaTex math typesetting for a specific page
-
+#  disableHLJS = true                        # disable highlight.js
+#  monoDarkIcon = true                       # show monochrome dark 
+#  comments = true                            # disable comments for a specific page
+#  math = true                                 # enable KaTex math typesetting for a specific page
 
 # ------------------------------
 # 配置网站菜单
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+#[menu]
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "About"
+#    url = "/about/"
+#    weight = 10
 #  [[menu.main]]
 #    identifier = "friends"
 #    name = "Friends"
