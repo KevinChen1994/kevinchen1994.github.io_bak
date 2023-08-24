@@ -14,27 +14,27 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 [menu]
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
+    name = "所有文章"
     url = "/posts/"
     weight = 1
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     weight = 2
   [[menu.main]]
-    identifier = "categories"
+    identifier = "类别"
     name = "Categories"
     url = "/categories/"
     weight = 3
   [[menu.main]]
     identifier = "series"
-    name = "Series"
+    name = "系列"
     url = "/series/"
     weight = 4
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "关于"
     url = "/about/"
     weight = 5
   [[menu.main]]
@@ -56,26 +56,36 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
       avatarURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = "346521888@qq.com"
-  [params.social]
-    [params.social.Email]
-      # 排列图标时的权重 (权重越大, 图标的位置越靠后)
-      weight = 10
-      # 你的社交 ID
-      id = "346521888@qq.com"
-      # 你的社交链接的前缀
-      prefix = ""
-      # 当鼠标停留在图标上时的提示内容
-      title = "Email"
-    [params.social.GitHub]
-      # 排列图标时的权重 (权重越大, 图标的位置越靠后)
-      weight = 0
-      # 你的社交 ID
-      id = "kevinchen1994"
-      # 你的社交链接的前缀
-      prefix = "https://github.com/"
-      # 当鼠标停留在图标上时的提示内容
-      title = "GitHub"
 
+# 文章页面配置
+[page]
+  # 是否使用系列导航
+  seriesNavigation = true
+  # 是否启用最后修改时间
+  enableLastMod = true
+  # 是否启用字数统计
+  enableWordCount = true
+  # 是否启用阅读时间估计
+  enableReadingTime = true
+   # 目录配置
+  [page.toc]
+    # 是否使用目录
+    enable = true
+  # 文章页面的分享信息设置
+  [page.share]
+    enable = true
+  # 评论系统设置
+  [page.comment]
+    enable = true
+
+# 网站分析配置
+[analytics]
+  enable = true
+  # Google Analytics
+  [analytics.google]
+    id = ""
+    # 是否匿名化用户 IP
+    anonymizeIP = true
 
 # paper 配置
 #[params]
