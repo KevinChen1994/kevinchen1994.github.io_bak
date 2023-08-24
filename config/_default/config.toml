@@ -10,53 +10,71 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
 # 主页信息设置
 [home]
-  [[home.profile]]
+  [home.profile]
     # 主页显示的网站标题 (支持 HTML 格式)
     title = "厨师海森堡的厨房"
     # 主页显示的网站副标题
     subtitle = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
+    # 主页显示头像的 URL
+    avatarURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
+    # Gravatar 邮箱，用于优先在主页显示的头像
+    gravatarEmail = "346521888@qq.com"
+
 
 # 菜单配置
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 1
-
-
-[params.home.profile]
-  # Gravatar 邮箱, 用于优先在主页显示的头像
-  gravatarEmail = "346521888@qq.com"
-  # 主页显示头像的 URL
-  avatarURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
-  # 头像的链接指向的 URL
-  avatarLinkURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
-
-[params.social]
-  [params.social.email]
-    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    name = ""
+    url = "https://github.com/kevinchen1994"
     weight = 10
-    # 你的社交 ID
-    id = "346521888@qq.com"
-    # 你的社交链接的前缀
-    prefix = ""
-    # 当鼠标停留在图标上时的提示内容
-    title = "Email"
-  [params.social.github]
-    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
-    weight = 0
-    # 你的社交 ID
-    id = "kevinchen1994"
-    # 你的社交链接的前缀
-    prefix = "https://github.com/"
-    # 当鼠标停留在图标上时的提示内容
-    title = "GitHub"
+
+[params]
+  [params.social]
+    [params.social.email]
+      # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+      weight = 10
+      # 你的社交 ID
+      id = "346521888@qq.com"
+      # 你的社交链接的前缀
+      prefix = ""
+      # 当鼠标停留在图标上时的提示内容
+      title = "Email"
+    [params.social.github]
+      # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+      weight = 0
+      # 你的社交 ID
+      id = "kevinchen1994"
+      # 你的社交链接的前缀
+      prefix = "https://github.com/"
+      # 当鼠标停留在图标上时的提示内容
+      title = "GitHub"
 
 
 # paper 配置
