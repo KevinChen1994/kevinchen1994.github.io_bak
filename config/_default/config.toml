@@ -3,11 +3,33 @@ languageCode = "en-us"
 title = "厨师海森堡的厨房"
 theme = "DoIt"
 
-author = "KevinChen"
-DefaultContentLanguage = "zh"
-paginate = 10
-ignoreErrors = ["error-remote-getjson"]
-enableInlineShortcodes = true
+[params.home.profile]
+  # Gravatar 邮箱, 用于优先在主页显示的头像
+  gravatarEmail = "346521888@qq.com"
+  # 主页显示头像的 URL
+  avatarURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
+  # 头像的链接指向的 URL
+  avatarLinkURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
+
+[params.social]
+  [params.social.email]
+    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+    weight = 10
+    # 你的社交 ID
+    id = "346521888@qq.com"
+    # 你的社交链接的前缀
+    prefix = ""
+    # 当鼠标停留在图标上时的提示内容
+    title = "Email"
+  [params.social.github]
+    # 排列图标时的权重 (权重越大, 图标的位置越靠后)
+    weight = 0
+    # 你的社交 ID
+    id = "kevinchen1994"
+    # 你的社交链接的前缀
+    prefix = "https://github.com/"
+    # 当鼠标停留在图标上时的提示内容
+    title = "GitHub"
 
 
 # paper 配置
