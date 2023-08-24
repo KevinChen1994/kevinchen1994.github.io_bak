@@ -57,7 +57,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = "346521888@qq.com"
   [params.social]
-    [params.social.email]
+    [params.social.Email]
       # 排列图标时的权重 (权重越大, 图标的位置越靠后)
       weight = 10
       # 你的社交 ID
@@ -66,7 +66,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
       prefix = ""
       # 当鼠标停留在图标上时的提示内容
       title = "Email"
-    [params.social.github]
+    [params.social.GitHub]
       # 排列图标时的权重 (权重越大, 图标的位置越靠后)
       weight = 0
       # 你的社交 ID
