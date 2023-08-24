@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "厨师海森堡的厨房"
 theme = "DoIt"
 
+# 配置网站菜单
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
 [params.home.profile]
   # Gravatar 邮箱, 用于优先在主页显示的头像
   gravatarEmail = "346521888@qq.com"
