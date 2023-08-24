@@ -9,12 +9,86 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 description = '👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer'
 
 
-# 配置网站菜单
-[menu.main]
+# Menu config
+# 菜单配置
+
+[[main]]
+  identifier = "posts"
+  # you can add extra information before the name (HTML format is supported), such as icons
+  # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+  pre = ""
+  # you can add extra information after the name (HTML format is supported), such as icons
+  # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+  post = ""
+  name = "所有文章"
+  url = "/posts/"
+  # title will be shown when you hover on this menu link.
+  # 将鼠标悬停在此菜单链接上时将显示标题。
+  title = ""
+  weight = 1
+[[main]]
+  identifier = "tags"
+  pre = ""
+  post = ""
+  name = "标签"
+  url = "/tags/"
+  title = ""
+  weight = 2
+[[main]]
+  identifier = "categories"
+  pre = ""
+  post = ""
+  name = "分类"
+  url = "/categories/"
+  title = ""
+  weight = 3
+[[main]]
+  identifier = "series"
+  pre = ""
+  post = ""
+  name = "系列"
+  url = "/series/"
+  title = ""
+  weight = 4
+[[main]]
+  identifier = "authors"
+  pre = ""
+  post = ""
+  name = "作者"
+  url = "/authors/"
+  title = ""
+  weight = 5
+[[main]]
+  identifier = "showcase"
+  pre = ""
+  post = ""
+  name = "作品"
+  url = "/showcase/"
+  title = ""
+  weight = 6
+[[main]]
+  identifier = "documentation"
+  pre = ""
+  name = "文档"
+  url = "/categories/documentation/"
+  title = ""
+  weight = 7
+[[main]]
   identifier = "about"
-  name = "About"
+  pre = ""
+  post = ""
+  name = "关于"
   url = "/about/"
-  weight = 10
+  title = ""
+  weight = 8
+[[main]]
+  identifier = "github"
+  pre = "<i class='fab fa-github fa-fw'></i>"
+  post = ""
+  name = ""
+  url = "https://github.com/kevinchen1994"
+  title = "GitHub"
+  weight = 9
 
 
 [params.home.profile]
