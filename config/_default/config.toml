@@ -71,12 +71,27 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
   [page.toc]
     # 是否使用目录
     enable = true
+    # 是否保持使用文章前面的静态目录
+    keepStatic = false
+    # 是否使侧边目录自动折叠展开
+    auto = true
   # 文章页面的分享信息设置
   [page.share]
     enable = true
+    Twitter = true
+    Weibo = true
   # 评论系统设置
   [page.comment]
     enable = true
+    # Utterances comment 评论系统设置 (https://utteranc.es/)
+    [page.comment.utterances]
+      enable = true
+      # owner/repo
+      repo = "Hugo-DoIt/utterances-comments"
+      issueTerm = "pathname"
+      label = ""
+      lightTheme = "github-light"
+      darkTheme = "github-dark"
 
 # 网站分析配置
 [analytics]
