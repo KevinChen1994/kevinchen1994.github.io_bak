@@ -16,9 +16,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     content = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
 
   [params.socialIcons]
-    - name = "github"
+    name = "github"
       url = "https://github.com/kevinchen1994"
-    - name = "email"
+    name = "email"
       url = "346521888@qq.com"
 
 
