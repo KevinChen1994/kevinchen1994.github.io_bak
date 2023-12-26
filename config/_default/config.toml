@@ -11,7 +11,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 [params]
 # 主页信息设置
   [params.homeInfoParams]
-    Title = "欢迎来到我们的厨房 👋"
+    Title = "欢迎来到我的厨房 👋"
     Content = """
       嗨，我是Kevin，一个自然语言算法工程师，更是一个热爱生活的编程少年，INFJ-A。
       坐标北京，互联网行业，喜欢电影、阅读、跑步，关注互联网行业、科技行业、新能源汽车行业以及FIRE运动。
@@ -44,6 +44,12 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     name = "关于"
     url = "/about/"
     weight = 5
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    name = ""
+    url = "https://github.com/kevinchen1994"
+    weight = 10
 
 # 文章页面配置
 [page]
