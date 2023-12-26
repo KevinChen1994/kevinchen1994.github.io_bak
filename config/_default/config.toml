@@ -8,32 +8,35 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
 
 # home-info mode
-homeInfoParams:
+[homeInfoParams]
   Title: "kevin"
   Content: 👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer
 
 
-menu:
-  main:
-    - identifier = posts
-      name = "所有文章"
-      url = "/posts/"
-      weight = 1
-    - identifier = "tags"
-      name = "标签"
-      url = "/tags/"
-      weight = 2
-    - identifier = "categories"
-      name = "类别"
-      url = "/categories/"
-      weight = 3
-    - identifier = "series"
-      name = "系列"
-      url = "/series/"
-      weight = 4
-    - identifier = "about"
-      name = "关于"
-      url = "/about/"
-      weight = 5
-
-
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "所有文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "类别"
+    url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "series"
+    name = "系列"
+    url = "/series/"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 5
