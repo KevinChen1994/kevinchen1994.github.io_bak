@@ -14,12 +14,13 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     title = "kevin"
     # 主页显示的网站副标题
     content = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
-
   [params.socialIcons]
     name = "github"
-      url = "https://github.com/kevinchen1994"
+    url = "https://github.com/kevinchen1994"
+  [params.socialIcons]  
     name = "email"
-      url = "346521888@qq.com"
+    url = "346521888@qq.com"
+      
 
 
 # 菜单配置
