@@ -12,10 +12,9 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 # 主页信息设置
   [params.homeInfoParams]
     Title = "kevin"
-    # 主页显示的网站副标题
     Content = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
   [params.socialIcons]
-    name = "GitHub"
+    name = "<GitHub>"
       url = "https://github.com/kevinchen1994"
 
       
