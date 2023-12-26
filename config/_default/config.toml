@@ -10,16 +10,16 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 
 [params]
 # 主页信息设置
-  [params.home]
-    [params.home.profile]
-      # 主页显示的网站标题 (支持 HTML 格式)
-      title = "kevin"
-      # 主页显示的网站副标题
-      subtitle = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
-      # 主页显示头像的 URL
-      avatarURL = "https://s1.ax1x.com/2023/08/15/pPQAI4H.png"
-      # Gravatar 邮箱，用于优先在主页显示的头像
-      gravatarEmail = "346521888@qq.com"
+  [params.homeInfoParams]
+    title = "kevin"
+    # 主页显示的网站副标题
+    content = "👨🏻‍💻热爱生活的编程少年|🏃不严肃跑者|🧠NLPer"
+
+  [params.socialIcons]
+    - name = "github"
+      url = "https://github.com/kevinchen1994"
+    - name = "email"
+      url = "346521888@qq.com"
 
 
 # 菜单配置
@@ -44,12 +44,6 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     name = "关于"
     url = "/about/"
     weight = 5
-  [[menu.main]]
-    identifier = "github"
-    pre = "<i class='fab fa-github fa-fw'></i>"
-    name = ""
-    url = "https://github.com/kevinchen1994"
-    weight = 10
 
 # 文章页面配置
 [page]
