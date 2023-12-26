@@ -50,3 +50,27 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
     name = ""
     url = "https://github.com/kevinchen1994"
     weight = 10
+
+# 文章页面配置
+[page]
+  # 是否使用系列导航
+  seriesNavigation = true
+  # 是否启用最后修改时间
+  enableLastMod = true
+  # 是否启用字数统计
+  enableWordCount = true
+  # 是否启用阅读时间估计
+  enableReadingTime = true
+   # 目录配置
+  [page.toc]
+    # 是否使用目录
+    enable = true
+    # 是否保持使用文章前面的静态目录
+    keepStatic = false
+    # 是否使侧边目录自动折叠展开
+    auto = true
+  # 文章页面的分享信息设置
+  [page.share]
+    enable = true
+    Twitter = true
+    Weibo = true
