@@ -26,16 +26,25 @@ languages:
           weight: 10
         - name: Categories
           url: /categories/
-          weight: 10
+          weight: 15
         - name: About me
           url: /about/
-          weight: 10
+          weight: 20
           
 params:
     env: production
     homeInfoParams:
         Title: "Test: my, garden!"
-        Content: "Hello"
+            Content: |
+      This is the personal website of Ethan Rahn.
+      
+      I am a software engineer, specializing in cybersecurity.
+      > - I deeply enjoy understanding a complex system, decomposing it, and finding where form does not meet intended function 🔍️
+      > - I am most familiar with securing products (this may be referred to as "blue team" stuff) 🛡️
+      > - I have an, unfortunate, familiarity with certification standards such as "FIPS 140" and "cPPND" (fka "Common Criteria") 📝️
+      
+      I enjoy reading about technology and imagining where it will take the world next.
+      > - Admittedly, I take a pessimistic worldview on this. I blame my time spent on cybersecurity for this 🤦️
 
     socialIcons:
         - name: twitter
