@@ -52,6 +52,15 @@ params:
         - name: github
           url: "https://github.com/kevinchen1994"
 
+    # share button      
+    ShowShareButtons: true
+    # showreading time
+    ShowReadingTime: true
+
+    ShowPostNavLinks: true
+    # Code copy button
+    ShowCodeCopyButtons: true
+
 assets:
     favicon: "/favicon.ico"
     favicon16x16:  "/favicon-16x16.png"
@@ -63,3 +72,6 @@ outputs:
         - HTML
         - RSS
         - JSON # is necessary
+
+
+    
