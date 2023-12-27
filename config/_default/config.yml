@@ -1,0 +1,56 @@
+baseURL: "https://kevinchen1994.github.io/"
+theme: hugo-PaperMod
+languageCode: "en-us"
+title: "厨师海森堡的厨房"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: /posts/
+          weight: 5
+        - name: Tags
+          url: /tags/
+          weight: 10
+        - name: Categories
+          url: /categories/
+          weight: 10
+        - name: About me
+          url: /about/
+          weight: 10
+          
+params:
+    env: production
+    homeInfoParams:
+        Title: "Test: my, garden!"
+        Content: "Hello"
+
+    socialIcons:
+        - name: twitter
+          url: "https://test.com/"
+        - name: stackoverflow
+          url: "https://test.com/"
+        - name: github
+          url: "https://test.com/"
+        - name: medium
+          url: "https://test.com/"
+        - name: linkedin
+          url: "https://test.com/"
+
+assets:
+    favicon: "/favicon.ico"
+    favicon16x16:  "/favicon-16x16.png"
+    favicon32x32:  "/favicon-32x32.png"
+    apple_touch_icon:  "/apple-touch-icon.png"
