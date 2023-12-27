@@ -56,15 +56,14 @@ params:
 
     # share button      
     ShowShareButtons: true
-    # showreading time
+    # showreading time 这两个功能貌似只支持英文，中文统计的不够准确
     # ShowReadingTime: true
-
+    # ShowWordCount: true
     ShowPostNavLinks: true
     # Code copy button
     ShowCodeCopyButtons: true
     # comments
     comments: true
-    ShowWordCount: true
 
     assets:
         favicon: "/favicon.png"
