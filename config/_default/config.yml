@@ -38,7 +38,7 @@ params:
     env: production
     homeInfoParams:
         Title: "欢迎来到我的厨房"
-        Content: "👋嗨，我是Kevin，自然语言处理算法工程师👨🏻‍💻，不严肃跑者🏃，热爱生活的编程少年，INFJ-A。\n
+        Content: "👋嗨，我是Kevin，自然语言处理算法工程师👨🏻‍💻，不严肃跑者🏃，热爱生活的编程少年🧠，INFJ-A。\n
 
                   \n
 
@@ -62,6 +62,8 @@ params:
     ShowPostNavLinks: true
     # Code copy button
     ShowCodeCopyButtons: true
+    # comments
+    comments: true
 
 assets:
     favicon: "/favicon.ico"
