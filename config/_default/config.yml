@@ -38,7 +38,7 @@ params:
     env: production
     homeInfoParams:
         Title: "欢迎来到我的厨房"
-        Content: "👋嗨，我是Kevin，一个自然语言处理算法工程师，更是一个热爱生活的编程少年，INFJ-A。\n
+        Content: "👋嗨，我是Kevin，自然语言处理算法工程师👨🏻‍💻，不严肃跑者🏃，热爱生活的编程少年，INFJ-A。\n
 
                   \n
 
@@ -51,6 +51,8 @@ params:
     socialIcons:
         - name: github
           url: "https://github.com/kevinchen1994"
+        - name: strava
+          url: "https://www.strava.com/athletes/112569335"
 
     # share button      
     ShowShareButtons: true
