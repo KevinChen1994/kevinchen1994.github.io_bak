@@ -57,13 +57,14 @@ params:
     # share button      
     ShowShareButtons: true
     # showreading time
-    ShowReadingTime: true
+    # ShowReadingTime: true
 
     ShowPostNavLinks: true
     # Code copy button
     ShowCodeCopyButtons: true
     # comments
     comments: true
+    ShowWordCount: true
 
     assets:
         favicon: "/favicon.png"
