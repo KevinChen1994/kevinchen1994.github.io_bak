@@ -27,9 +27,12 @@ languages:
         - name: Categories
           url: /categories/
           weight: 15
-        - name: About me
+        - name: Search
+          url: /search/
+          weight: 20  
+        - name: About Me
           url: /about/
-          weight: 20
+          weight: 25
           
 params:
     env: production
@@ -43,7 +46,7 @@ params:
 
                   这个博客主要用来记录我的学习、生活、思考，你可以通过标签筛选你感兴趣的内容。\n\n
                   
-                  如果你想了解我，可以在About me页面进行查看。\n\n"
+                  如果你想了解我，可以在About Me页面进行查看。\n\n"
                 
     socialIcons:
         - name: github
