@@ -35,26 +35,19 @@ params:
     env: production
     homeInfoParams:
         Title: "Test: my, garden!"
-        Content: "👋嗨，我是Kevin，一个自然语言处理算法工程师，更是一个热爱生活的编程少年，INFJ-A。\n
+        Content: "👋嗨，我是Kevin，一个自然语言处理算法工程师，更是一个热爱生活的编程少年，INFJ-A。\n\n
 
-                - 坐标北京，互联网行业，喜欢电影、阅读、跑步，关注互联网行业、科技行业、新能源汽车行业以及FIRE运动。\n
-                - 这个博客名称是因为我喜欢《Breaking Bad》(绝命毒师)，主角就叫老白，绰号海森堡，同时他在剧里从事化学制毒，行话cook，所以我就取名为厨师海森堡的厨房，单纯是为了搞怪。\n
-                - 这个博客我会总结一些技术相关话题，平时的感想，杂七杂八的话题，这里就是我的自留地了，你可以通过标签阅读感兴趣的话题。\n
-                - 如果你对我或者我写的东西感兴趣的话，欢迎交流📮346521888@qq.com。\n"
+                  笔记是总结知识增援未来的自己，写作是对未来要认识你的人的自我介绍。\n\n
+
+                  这个博客主要用来记录我的学习、生活、思考，你可以通过标签筛选你感兴趣的内容。\n\n
+                  
+                  如果你想了解我，可以在About me页面进行查看。\n\n"
                 
       
 
     socialIcons:
-        - name: twitter
-          url: "https://test.com/"
-        - name: stackoverflow
-          url: "https://test.com/"
         - name: github
-          url: "https://test.com/"
-        - name: medium
-          url: "https://test.com/"
-        - name: linkedin
-          url: "https://test.com/"
+          url: "https://github.com/kevinchen1994"
 
 assets:
     favicon: "/favicon.ico"
