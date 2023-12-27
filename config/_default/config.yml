@@ -35,7 +35,7 @@ params:
     env: production
     homeInfoParams:
         Title: "Test: my, garden!"
-            Content: |
+        Content: |
       This is the personal website of Ethan Rahn.
       
       I am a software engineer, specializing in cybersecurity.
@@ -45,6 +45,7 @@ params:
       
       I enjoy reading about technology and imagining where it will take the world next.
       > - Admittedly, I take a pessimistic worldview on this. I blame my time spent on cybersecurity for this 🤦️
+      
 
     socialIcons:
         - name: twitter
