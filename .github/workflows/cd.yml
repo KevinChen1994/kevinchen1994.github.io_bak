@@ -5,8 +5,8 @@ on:
     branches:
       - 'main'
 
-  schedule:
-    - cron: '0 0 * * *' # run every day
+  # schedule:
+    # - cron: '0 0 * * *' # run every day
   workflow_dispatch:
     
 
