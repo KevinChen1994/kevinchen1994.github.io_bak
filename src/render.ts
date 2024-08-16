@@ -10,63 +10,82 @@ import {
   GetPageResponse,
   PageObjectResponse,
 } from "@notionhq/client/build/src/api-endpoints";
-import { NotionToMarkdown, MdBlock } from "@pclouddev/notion-to-markdown";
+import { NotionToMarkdown } from "@pclouddev/notion-to-markdown";
 import YAML from "yaml";
 import { sh } from "./sh";
 import { DatabaseMount, loadConfig, PageMount } from "./config";
 import { getPageTitle, getCoverLink, getFileName } from "./helpers";
 import katex from "katex";
+import { MdBlock } from "@pclouddev/notion-to-markdown/build/types";
 import path from "path";
 import { getContentFile } from "./file";
 require("katex/contrib/mhchem"); // modify katex module
 
+function getExpiryTime(blocks: MdBlock[], expiry_time: string | undefined = undefined): string | undefined {
+  for (const block of blocks) {
+    if (block.expiry_time !== undefined) {
+      if (expiry_time === undefined) expiry_time = block.expiry_time
+      else expiry_time = expiry_time < block.expiry_time ? expiry_time : block.expiry_time
+    }
+    if (block.children.length > 0) {
+      const child_expiry_time = getExpiryTime(block.children, expiry_time)
+      if (child_expiry_time) {
+        if (expiry_time === undefined) expiry_time = child_expiry_time
+        else expiry_time = expiry_time < child_expiry_time? expiry_time : child_expiry_time
+      }
+    }
+  }
+  return expiry_time
+}
+
 // 上传图片到图床并返回新 URL
 async function uploadImageToHosting(imageUrl: string): Promise<string> {
-    const ret = "https://www.notion.so/imalge/" + encodeURIComponent(imageUrl) + "?table=" + "block" + '&id=' + "1";
-    return ret;
+  const ret = "https://www.notion.so/imalge/" + encodeURIComponent(imageUrl) + "?table=" + "block" + '&id=' + "1";
+  return ret;
 }
 
 // 替换 Markdown 中的图片 URL
 async function replaceImageUrls(mdString: string): Promise<string> {
-    const urlRegex = /!\[.*?\]\((.*?)\)/g;
-    const matches = [...mdString.matchAll(urlRegex)];
-    const replacements = await Promise.all(matches.map(async (match) => {
-        const [fullMatch, url] = match;
-        if (url.startsWith('https://www.notion.so/')) {
-            const newUrl = await uploadImageToHosting(url);
-            return { fullMatch, url, newUrl };
-        }
-        return { fullMatch, url, newUrl: url };
-    }));
+  const urlRegex = /!\[.*?\]\((.*?)\)/g;
+  const matches = [...mdString.matchAll(urlRegex)];
+  const replacements = await Promise.all(matches.map(async (match) => {
+      const [fullMatch, url] = match;
+      if (url.startsWith('https://www.notion.so/')) {
+          const newUrl = await uploadImageToHosting(url);
+          return { fullMatch, url, newUrl };
+      }
+      return { fullMatch, url, newUrl: url };
+  }));
 
-    // 使用替换结果更新字符串
-    let updatedString = mdString;
-    replacements.forEach(({ fullMatch, url, newUrl }) => {
-        updatedString = updatedString.replace(fullMatch, fullMatch.replace(url, newUrl));
-    });
+  // 使用替换结果更新字符串
+  let updatedString = mdString;
+  replacements.forEach(({ fullMatch, url, newUrl }) => {
+      updatedString = updatedString.replace(fullMatch, fullMatch.replace(url, newUrl));
+  });
 
-    return updatedString;
+  return updatedString;
 }
 
-async function renderPage(page: PageObjectResponse, notion: Client) {
+export async function renderPage(page: PageObjectResponse, notion: Client) {
+
   // load formatter config
   const formatterConfig = (await loadConfig()).formatter;
-  formatterConfig.equation.style;
+  formatterConfig.equation.style
 
   const n2m = new NotionToMarkdown({ notionClient: notion });
-  let frontInjectString = '';
+  let frontInjectString = ''
 
   switch (formatterConfig.equation.style) {
     case 'markdown':
       n2m.setCustomTransformer("equation", async (block) => {
         const { equation } = block as EquationBlockObjectResponse;
-        return `\$begin:math:display$${equation}\\$end:math:display$`;
+        return `\\[${equation}\\]`;
       });
       break;
     case 'shortcode':
       n2m.setCustomTransformer("equation", async (block) => {
         const { equation } = block as EquationBlockObjectResponse;
-        return `{{< math >}}\$begin:math:display$${equation}\\$end:math:display${{< /math >}}`
+        return `{{< math >}}\\[${equation}\\]{{< /math >}}`
       })
       break;
     case 'html':
@@ -91,7 +110,6 @@ async function renderPage(page: PageObjectResponse, notion: Client) {
   if (page_expiry_time) nearest_expiry_time = page_expiry_time
   let mdString = n2m.toMarkdownString(mdblocks);
   mdString = await replaceImageUrls(mdString); // 替换图片 URL
-  
   page.properties.Name;
   const title = getPageTitle(page);
   const frontMatter: Record<
@@ -117,7 +135,7 @@ async function renderPage(page: PageObjectResponse, notion: Client) {
         nearest_expiry_time = expiry_time
       }
     }
-  }
+  } 
 
   // map page properties to front matter
   for (const property in page.properties) {
@@ -218,9 +236,11 @@ async function renderPage(page: PageObjectResponse, notion: Client) {
   frontMatter.NOTION_METADATA = page;
 
   // save update time
-  frontMatter.UPDATE_TIME = (new Date()).toISOString();
+  frontMatter.UPDATE_TIME = (new Date()).toISOString()
   // save nearest expiry time
-  if (nearest_expiry_time) frontMatter.EXPIRY_TIME = nearest_expiry_time;
+  if (nearest_expiry_time) frontMatter.EXPIRY_TIME = nearest_expiry_time
+ 
+
 
   return {
     title,
@@ -251,4 +271,18 @@ export async function savePage(
     const metadata = post.metadata;
     // if the page is not modified, continue
     if (post.expiry_time == null && metadata.last_edited_time === page.last_edited_time) {
-      console.info
+      console.info(`[Info] The post ${postpath} is up-to-date, skipped.`);
+      return;
+    }
+  }
+  // otherwise update the page
+  console.info(`[Info] Updating ${postpath}`);
+
+  const { title, pageString } = await renderPage(page, notion);
+  const fileName = getFileName(title, page.id);
+  await sh(
+    `hugo new "${mount.target_folder}/${fileName}"`,
+    false
+  );
+  fs.writeFileSync(`content/${mount.target_folder}/${fileName}`, pageString);
+}
