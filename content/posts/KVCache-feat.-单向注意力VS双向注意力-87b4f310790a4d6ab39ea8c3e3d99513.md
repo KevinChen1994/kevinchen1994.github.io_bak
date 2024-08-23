@@ -99,8 +99,8 @@ NOTION_METADATA:
   url: "https://www.notion.so/KVCache-feat-VS-87b4f310790a4d6ab39ea8c3e3d99513"
   public_url: "https://kevinchen1994.notion.site/KVCache-feat-VS-87b4f310790a4d6a\
     b39ea8c3e3d99513"
-UPDATE_TIME: "2024-08-23T08:27:01.678Z"
-EXPIRY_TIME: "2024-08-23T09:26:55.550Z"
+UPDATE_TIME: "2024-08-23T09:21:41.055Z"
+EXPIRY_TIME: "2024-08-23T10:21:34.701Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
@@ -138,7 +138,7 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
 下图是GPT2的解码过程，给定输入，模型预测下一个token，然后在下一步中使用上一步预测的token作为输入再次进行预测。图来源：[https://jalammar.github.io/illustrated-gpt2/](https://jalammar.github.io/illustrated-gpt2/)
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/56e50bbd-2997-4f89-bfeb-a27377d1c666/decoder.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T082655Z&X-Amz-Expires=3600&X-Amz-Signature=2d8e8a7985226be160c47690c35369a750e134893438e07f2aadf2db7759ce7d&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/56e50bbd-2997-4f89-bfeb-a27377d1c666/decoder.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T092134Z&X-Amz-Expires=3600&X-Amz-Signature=01d6eb69c5ffc805b46fedd47bf48d3702921811b7b663d49f0105a4e5478a3f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 我们来逐步计算一下解码的过程。
@@ -300,7 +300,7 @@ c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-
 下图清晰了对比了使用KVCache和不使用KVCache的区别，图来源[https://medium.com/@joaolages/kv-caching-explained-276520203249](https://medium.com/@joaolages/kv-caching-explained-276520203249)
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/9109d308-9ff2-4e32-8ffd-f1fd908c98a1/kv-cache.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T082655Z&X-Amz-Expires=3600&X-Amz-Signature=11ce754462cc9923d8fc13d0c09ddee410640c39007ed98743ef2a425d801a69&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/9109d308-9ff2-4e32-8ffd-f1fd908c98a1/kv-cache.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T092134Z&X-Amz-Expires=3600&X-Amz-Signature=720f711dc8d92f288cd028962d8a7f68160fc715a784c3eaa9d231f06e3e16c5&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## 实现细节
@@ -389,7 +389,7 @@ without KV caching: 3516.684 +- 27.119 seconds
 目前很多模型，像是LLaMA、Qwen，都使用GQA，其目的也是为了提高模型运行的速度，我们也可以从KVCache的角度去理解这些方法，他们的目的其实就是为了减少KV的个数，从而减少KVCache。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/6af07664-95f7-428f-8e34-360fca53a1a9/1_VDWPMgjQzFEgiTHcL5-9fw.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T082655Z&X-Amz-Expires=3600&X-Amz-Signature=d6f621aa62b3ff2ef0b47963e2e58eb1e7e6ed4b1d7f39dc0ca43d5a35b4fa75&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/6af07664-95f7-428f-8e34-360fca53a1a9/1_VDWPMgjQzFEgiTHcL5-9fw.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T092134Z&X-Amz-Expires=3600&X-Amz-Signature=f3e50b55dee1fdf4c6bd547ca4e673447eca64d806c270b2d42557efb5590a60&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 MHA（Multi-Head Attention），传统的Transformer的attention机制，也就是对query、key、value分别使用单独的头，每个头独立处理输入的不同方面，优点就是独立计算，效果最好，但是计算成本太高。
@@ -448,7 +448,7 @@ GQA（Grouped-Query Attention），是MHA和MQA的中间地带。将多个头进
 这就实现了prompt并行处理的效果，从openAI的api定价上也能看出来，input的价格是比output的价格要低的，就是因为input可以并行处理，比较节省算力。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/071e5b20-8c30-4a68-99b8-7d86cf3f9781/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T082655Z&X-Amz-Expires=3600&X-Amz-Signature=bb834b91f23ca38145b5de96f8cf15150cf429c7cfa46705a26040ac0c58f7e7&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/071e5b20-8c30-4a68-99b8-7d86cf3f9781/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240823T092135Z&X-Amz-Expires=3600&X-Amz-Signature=8034d7870a283c32eb7defdd24de90a076ae39d3105771e0fc0df30739d3794d&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## 总结
