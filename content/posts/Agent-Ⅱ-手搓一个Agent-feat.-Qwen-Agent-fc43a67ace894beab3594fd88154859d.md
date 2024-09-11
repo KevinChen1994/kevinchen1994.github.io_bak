@@ -100,8 +100,8 @@ NOTION_METADATA:
     88154859d"
   public_url: "https://kevinchen1994.notion.site/Agent-Agent-feat-Qwen-Agent-fc43\
     a67ace894beab3594fd88154859d"
-UPDATE_TIME: "2024-09-11T03:23:18.222Z"
-EXPIRY_TIME: "2024-09-11T04:23:11.998Z"
+UPDATE_TIME: "2024-09-11T04:28:25.394Z"
+EXPIRY_TIME: "2024-09-11T05:28:15.611Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
@@ -196,37 +196,37 @@ def app_gui():
 接着他实现了代码，代码逻辑看上去没有啥问题，有一处小问题，那就是两居室可能不能使用等于2室来表示，而是包含2室，我们看看运行结果怎么样。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/0a5d54ec-a589-4509-b198-1000ca4d87cb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=daa060fc53d56d77fc4bf427fd337b507c41ffd7e29b66f2a284803be16812be&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/0a5d54ec-a589-4509-b198-1000ca4d87cb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=040f6b40e0cd4c71dea433daaa02538d3a9e48d79371f0d347369f993fb3cd1b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/ac8ab89b-633f-4919-bfa6-2d86d28ae82b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=cfedf11b2d0a40a864dc374f4e6d0bb5371618f398091ebe8ee9de1742154c90&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/ac8ab89b-633f-4919-bfa6-2d86d28ae82b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=5bccab41183658235e9124760467e2947f1097cbc3d3da7d5a0ef2dc903e1415&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 代码运行出错了，因为数据中并没有区域这一列，实际是Region，也没有居室这样的列名，接着他通过pandas查看了列名来确认具体的列名是什么。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/3b718e77-1946-4ac3-a089-866d3a754068/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=fc0c19f322727d16f1e74404957f6989f79fc9688f3eb74ac678204694310b7e&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/3b718e77-1946-4ac3-a089-866d3a754068/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=45ee4318538def4ea2d1da1a9e9c5ada1f2edc6ecdf14b6e894c966075e2b11e&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 这次的代码没有问题了，字段使用都是正确的，两居室也是使用contains来表示。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/c090d249-4a2e-42b7-8bb1-b469afd6f8c5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=07b9f6e6d8cafe65ec734e6fd0443a80064336ab30ece88dc585faa55d548797&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/c090d249-4a2e-42b7-8bb1-b469afd6f8c5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=202053e4e2541dfadeef956654c1c6e9d5f9138c0e7b342983c45eea8db45021&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 每平米房价跟房屋面积的图画出来了，看上去不错。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/356e3fa9-a7a7-4c14-97cc-a1053e50368c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=62ed7bb0e3b2fcb5cc54a88106e08a45e1152a174f501f5830227054d941abc3&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/356e3fa9-a7a7-4c14-97cc-a1053e50368c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=8a6d2b0e8d41a33b0aa1515d7ba7b6b100f5072931587a4c5b4c72126085d65a&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/1cd562c0-28a7-486f-97c3-9f4878b101e2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=a3a4cb600de3da36a7586280a6743963cd45f6d0236d957db32cd3c9af64ef39&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/1cd562c0-28a7-486f-97c3-9f4878b101e2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=46ec435593f56fe8a568def27b81e48c4d176e0a58f6119c8f5303d4d1c6c4e4&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 尽管代码报错了，但是最终得到了答案，最后还给出了一些分析，很好的完成了我的任务。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/95839a71-f818-4faa-83e2-c4d89d13fb1c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T032312Z&X-Amz-Expires=3600&X-Amz-Signature=4550080029211dd0db909a2d2f148a7f3c633ae9be045cff6f24a1e1a3228093&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/95839a71-f818-4faa-83e2-c4d89d13fb1c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240911%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240911T042815Z&X-Amz-Expires=3600&X-Amz-Signature=7fc184dfa0d5059f277d5c29dfeb1dca149c2a52fceaf1f35bcbd4654f62d323&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## 总结
