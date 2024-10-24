@@ -6,9 +6,9 @@ draft: false
 featuredImage: "https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-8\
   2ce-4f96-ae1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-\
   Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr\
-  edential=AKIAT73L2G45HZZMZUHI%2F20241023%2Fus-west-2%2Fs3%2Faws4_request&X-Am\
-  z-Date=20241023T232318Z&X-Amz-Expires=3600&X-Amz-Signature=826b1a9a06152c4aee\
-  7ba43ada13bf0c53c23e8650c08f4346f5dbf5ea083125&X-Amz-SignedHeaders=host&x-id=\
+  edential=AKIAT73L2G45GO43JXI4%2F20241024%2Fus-west-2%2Fs3%2Faws4_request&X-Am\
+  z-Date=20241024T014758Z&X-Amz-Expires=3600&X-Amz-Signature=8db891ef71bcd99d5b\
+  604425ff38425e6aad61fdeccd4568bcbc5a8bdc54640f&X-Amz-SignedHeaders=host&x-id=\
   GetObject"
 series:
   - "个人成长"
@@ -36,11 +36,11 @@ NOTION_METADATA:
       url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-a\
         e1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-Amz-\
         Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-\
-        Credential=AKIAT73L2G45HZZMZUHI%2F20241023%2Fus-west-2%2Fs3%2Faws4_requ\
-        est&X-Amz-Date=20241023T232213Z&X-Amz-Expires=3600&X-Amz-Signature=0858\
-        10e20d04e34694636d2c8b6d91c3d458f17aa077903dade496a2b3140bb5&X-Amz-Sign\
+        Credential=AKIAT73L2G45GO43JXI4%2F20241024%2Fus-west-2%2Fs3%2Faws4_requ\
+        est&X-Amz-Date=20241024T014625Z&X-Amz-Expires=3600&X-Amz-Signature=59ab\
+        3f5e3eaa83b318a9d371c0bc87c6164eaef584dbe65f31c8b9e46f46cdc8&X-Amz-Sign\
         edHeaders=host&x-id=GetObject"
-      expiry_time: "2024-10-24T00:22:13.501Z"
+      expiry_time: "2024-10-24T02:46:25.512Z"
   icon: null
   parent:
     type: "database_id"
@@ -135,8 +135,8 @@ NOTION_METADATA:
           href: null
   url: "https://www.notion.so/28585cdabe2046d4b23bdface5d3a1fd"
   public_url: "https://kevinchen1994.notion.site/28585cdabe2046d4b23bdface5d3a1fd"
-UPDATE_TIME: "2024-10-23T23:23:23.698Z"
-EXPIRY_TIME: "2024-10-24T00:23:18.810Z"
+UPDATE_TIME: "2024-10-24T01:48:03.159Z"
+EXPIRY_TIME: "2024-10-24T02:47:58.162Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
