@@ -7,8 +7,8 @@ featuredImage: "https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-8\
   2ce-4f96-ae1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-\
   Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr\
   edential=AKIAT73L2G45GO43JXI4%2F20241120%2Fus-west-2%2Fs3%2Faws4_request&X-Am\
-  z-Date=20241120T030056Z&X-Amz-Expires=3600&X-Amz-Signature=9ee2caa9aacd233678\
-  cc6e2d36e298cd4fa67ec76ae8f7a92b7e88dda3db60a8&X-Amz-SignedHeaders=host&x-id=\
+  z-Date=20241120T033652Z&X-Amz-Expires=3600&X-Amz-Signature=e0ac57606641e3753d\
+  51b1a46f0839f95ff31c6c2f5bec9db33bfdb33506c278&X-Amz-SignedHeaders=host&x-id=\
   GetObject"
 series:
   - "个人成长"
@@ -37,10 +37,10 @@ NOTION_METADATA:
         e1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-Amz-\
         Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-\
         Credential=AKIAT73L2G45GO43JXI4%2F20241120%2Fus-west-2%2Fs3%2Faws4_requ\
-        est&X-Amz-Date=20241120T025909Z&X-Amz-Expires=3600&X-Amz-Signature=a881\
-        a3c9ff2c57fa2016e5ab7cf80bfad8dee6bc918bff7335db072c2767bbff&X-Amz-Sign\
+        est&X-Amz-Date=20241120T033548Z&X-Amz-Expires=3600&X-Amz-Signature=336a\
+        23a40879b2d2c8abd6830f0d8332944b808f938edee702d9ed64bd47bdf7&X-Amz-Sign\
         edHeaders=host&x-id=GetObject"
-      expiry_time: "2024-11-20T03:59:09.296Z"
+      expiry_time: "2024-11-20T04:35:48.941Z"
   icon: null
   parent:
     type: "database_id"
@@ -135,8 +135,8 @@ NOTION_METADATA:
           href: null
   url: "https://www.notion.so/28585cdabe2046d4b23bdface5d3a1fd"
   public_url: "https://kevinchen1994.notion.site/28585cdabe2046d4b23bdface5d3a1fd"
-UPDATE_TIME: "2024-11-20T03:01:02.803Z"
-EXPIRY_TIME: "2024-11-20T04:00:56.290Z"
+UPDATE_TIME: "2024-11-20T03:36:56.760Z"
+EXPIRY_TIME: "2024-11-20T04:36:52.301Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
