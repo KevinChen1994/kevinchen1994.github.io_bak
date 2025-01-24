@@ -99,8 +99,8 @@ NOTION_METADATA:
   url: "https://www.notion.so/Agent-Introduction-14a53065fe744ddcae50ffafa5fcedf0"
   public_url: "https://kevinchen1994.notion.site/Agent-Introduction-14a53065fe744\
     ddcae50ffafa5fcedf0"
-UPDATE_TIME: "2025-01-24T17:19:17.841Z"
-EXPIRY_TIME: "2025-01-24T18:19:11.973Z"
+UPDATE_TIME: "2025-01-24T18:30:21.707Z"
+EXPIRY_TIME: "2025-01-24T19:30:16.721Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
@@ -121,7 +121,7 @@ Agent能够通过构建LLM与规划、记忆、工具和执行来完成复杂的
 下图为Agent的构成的概要。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/01e26f63-8eec-47b0-99ef-0ddcd7aba4ec/agent-overview.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=a868e28978510d2268b9f649ef1be88fae5e0ee68286b467e986c852790be6ce&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/01e26f63-8eec-47b0-99ef-0ddcd7aba4ec/agent-overview.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=8899dc2e4f7b25261de32b0d1b67cf1eba487430cf66906ceade278bc2407d1d&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## Memory
@@ -151,13 +151,13 @@ Agent能够通过构建LLM与规划、记忆、工具和执行来完成复杂的
 在CoT的基础上，还有ToT（Tree of Though）的方法，通过在每一步探索多个可能得路径，形成树状结构，再通过DFS或者BSF来评估每个步骤的有效性。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/caad19c9-e75d-4e81-a654-d8b7605df700/tot.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=980988a1eeea3ba4bb0ddb3995dfb0266febcf1c1706be1f9029af2a6ecaa238&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/caad19c9-e75d-4e81-a654-d8b7605df700/tot.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=f1757c68291c34cf6d22f7b3c7cba0dc753cc8b8a669483027777b5c3e8cd86e&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 还有一种方法是LLM+P，也就是通过外部规划期来进行长期规划，这种方法先将问题转化为PDDL格式，然后利用规划期生成方案，最终将这一方案转换为自然语言。本质上，规划步骤被外包给外部工具，假设特定领域的 PDDL 和合适的规划器可用，这在某些机器人设置中很常见，但在许多其他领域并不常见。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/0687d74d-ec28-4124-984b-192ba7e82461/llmP.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=0a408c9a92b8b0b7b74eafe763d2f20c94f700c962d38015ae612eadf30d2b8e&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/0687d74d-ec28-4124-984b-192ba7e82461/llmP.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=ee8bff32b152a780d5d3da6aa41dd651fc677dffc4140747592a847d66c893d8&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ### 有反馈规划
@@ -183,7 +183,7 @@ Observation: ...
 下图可以看到使用ReAct后的效果，并且对比了只使用推理（reason）和只使用执行（act）的区别。在使用了推理+执行后，模型可以很好的规划这个任务，并且根据每一步的结果来规划下一步需要做什么，最终得到正确的答案。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/a490c953-a74c-4835-a670-96188bc1f16f/ReAct.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=c5a147019b74d03bda673d95318c794e55189942f3a844b4f952e0b80fa5c83a&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/a490c953-a74c-4835-a670-96188bc1f16f/ReAct.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=5c681acb59c26ef5bd458a5bc5fb8969fbb2cdf2241937fded0fe4a0aeb96270&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 传统的强化学习学习大量的训练样本和计算资源来让模型从错误中进行学习，Reflexion提出了一种新的框架，不通过更新模型的权重，而是通过自然语言的反馈来增强模型从错误中学习。
@@ -192,7 +192,7 @@ Observation: ...
 Reflexion有一个标准的RL设置，其中简历模型提供简单的二元奖励，动作空间遵守ReAct中的设置，其中特定于任务的动作空间通过语言进行增强，以实现复杂的推理步骤。每一次执行，执行者（Actor）都会基于观察状态生成文本和动作，执行后，评估者（Evaluator）会对执行者生成的内容计算奖励分数，自我反思模型（Self-reflection）会生成口头自我反思提示以协助执行者进行改进，对于效率低下的规划，因为会存储在长期记忆中，所以会被识别到一直没有完成，这时自我反思模型会考虑将其停止。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/076884f4-ee09-41cf-ae0d-6b39bd7e0f27/reflexion.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=aa9f9392fdc5023fffcba2359eb35a4f846853536d4629ab2e63d45a2b9219b2&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/076884f4-ee09-41cf-ae0d-6b39bd7e0f27/reflexion.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=d3de7001bb274de12c7a32a0a5e38900cedf29118d0d2811b7dfb4d33dc4d8c7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## Tools
@@ -216,7 +216,7 @@ TALM（Tool Augmented Language Models）和Toolformer都是对LLM进行微调，
 HuggingGPT是一个使用ChatGPT作为任务规划器的框架，根据模型描述选择HuggingFace平台中可用的模型，并根据执行结果总结响应。
 
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/56d6065a-8a9f-4353-b13b-18c5ab114ade/huggingGPT.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T171912Z&X-Amz-Expires=3600&X-Amz-Signature=799cb8207668c6fe2aadb470185c76bb61c914a97f402d0309832d421e26abc6&X-Amz-SignedHeaders=host&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-ae1a-879bd6c9f3a6/56d6065a-8a9f-4353-b13b-18c5ab114ade/huggingGPT.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45FSPPWI6X%2F20250124%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250124T183016Z&X-Amz-Expires=3600&X-Amz-Signature=d0d08260709d374695d53808bea8b05fba499b56bab249603dcb6f6d640a0aab&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 
 ## Challenges
