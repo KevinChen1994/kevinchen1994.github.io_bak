@@ -78,6 +78,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+          name: github-pages  # ✅ 确保 artifact 名称匹配 deploy 阶段
+      - name: Check public directory
+        run: ls -al ./public
 
   deploy:
     environment:
@@ -89,3 +92,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          artifact_name: github-pages  # ✅ 强制指定 artifact 名称
