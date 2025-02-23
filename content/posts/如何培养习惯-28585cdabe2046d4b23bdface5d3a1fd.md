@@ -6,25 +6,25 @@ draft: false
 featuredImage: "https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-8\
   2ce-4f96-ae1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-\
   Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Cr\
-  edential=ASIAZI2LB4665Q65MA3J%2F20250223%2Fus-west-2%2Fs3%2Faws4_request&X-Am\
-  z-Date=20250223T082836Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX\
-  2VjENP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJHMEUCIA59wpkj2P9A0amcDh\
-  Xyddcz0QLAmb1DZzuWpnR%2B1BL5AiEAoQn4iSZkpFcdMEmHUhU3NYyYVXjZznIsavOG%2FwSuaMI\
-  qiAQI%2FP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDKo9SsQWx2fhKB\
-  HxxircA6vEhjaRUmkxOCTw86iqXQ%2BSPySftVNtOU5cGIP2GcuS4HK3JZMPudqNkC8NdnMLz4341\
-  PpLevtTcerHMAidZRF3zn2TxwoWde2J1g8MV2A8l6VLvjDJge3TD8ZpnRTqKlwozji1jHdaBYZFIq\
-  OSK5%2BefBd16SKM2iTEUwJlfYbHx0M9dGytOdNq%2F41Xg4GSx8x8HTH0fqESP5iV4ptHC4HW0FX\
-  fzUck%2BC%2BUl3bCTacYY5JKeFlhpEisc4DV3Auf5cQs6x%2FKap9n8QMyWK97PZ%2Bl44eGpBk1\
-  qckrnGd1t6m6M%2F2rLLmJJAz5Jx0QTYQPJNN3WQLrVrrm1EBzwr5KAgFH1XMqXkuG%2BRTSiAf6k\
-  0wrkY%2F3FaDEySvprT9pRzSTAwvjr9vqk%2Bt3dD4bCzM2VaoMqUs5e1%2Ft9nWwoqmc%2F1lNjE\
-  YCQEVTnR5ERR%2Fha9Mv2dNV59B2tHVJb8LGaY6aM4itzHYyhv7K1c8Viha%2Ba58v5gllwwNfLD1\
-  WFvYxXAwnJ4mnxD1SMju0hkAotphhbPSIIpSo0YUsEL6qJ%2Fzr%2BXPPQOYpN1p%2BxttK1TLEXL\
-  qc6wqoWdbaq4lSMPUwADG4T19T9mWaUE0TZvIr8AHUdD0REbKzr%2BrsaH%2BvnvqzMP2Z6r0GOqU\
-  BR4bKiL0gVmKM4%2FOQYtlmHfwUF3q0UjQ%2BT%2FVSjHtlm0rupnHXdWXkaveDT2f1O3dfc0qg7y\
-  6DsU%2FEgtNTO8%2BWB%2FMQ1SLP%2FQ3rVx%2FFCaTU8Dc09CfBYuVJwG7QRhOU1PD2SfoOouiYt\
-  6ERMwUU8DCX3xdhrpmw3rDTzgtcb8m8HqhvWwTlp%2Bmmrz69Bgsa3A9S1hNUVhnEIfJ4D9yZi6D9\
-  qRSnii9E&X-Amz-Signature=2d1532715a7c207a5515a793a8396e2e29f8c9f63e59bee6c51b\
-  f5622c3f0063&X-Amz-SignedHeaders=host&x-id=GetObject"
+  edential=ASIAZI2LB466XXP43KP3%2F20250223%2Fus-west-2%2Fs3%2Faws4_request&X-Am\
+  z-Date=20250223T092338Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX\
+  2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIDi5ohdAGr2c9VwjBN\
+  ySNeTjxJOdN8xbhbVKjzh25Ng6AiA158zLGWjbn0QKmIoD5e%2Fzx15CK88bNfQB7g7HiXVJNSqIB\
+  Aj%2B%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMdQncInbYcYM3DiKd\
+  KtwDHAyvPnJElrrci7mWJ94nGb8XcIyVoPP5OLzYYMEvAOSDITbba90Ghrjgkb58yQ7PjBCnDftKO\
+  22CsOsu8fitOJgWzUFm7ST%2Fa6FSqMyod1GpROehBMKBKSFLl0O3McERz%2FhKsYbQU7MQ7XJ%2B\
+  cWC7GMDI0YNYesz%2FL1im5GZ9ut%2B0AUaO%2FzKCbreFNeEm8OjOXlM5%2BRKjE%2BTMmqSpDKc\
+  SUXl8eqVMpzfVlIoYrldPlEYoCuUKyjLlbXhhU0fnstSKUCPpbfVw5YdCCuVUsK4ZzZmfM9QaqTE1\
+  v5KZoYY2BQ2bDwPVGlpjmByAetEUaOX0DHMqVB9I6TfIAC29CYb7jTiBLsyFFzSFep2TDUPxBzqmA\
+  Vvvtm%2FbmaxaEbqGzQRUqA15UrjSCTElM%2B6zT6A0EltOZMM8b3ZUxMWcDMvfJqu0%2B%2FOscL\
+  wOTcSbIzzlVtAJXWXR0lBaBx68E78VSOUbrxK36LdaS%2Bq7%2BQCNpJFlyisvfzgxdlqGY0JxyFV\
+  h6CBf9R4ISMqLtOGM0HUH61YdsQIiSJNQ5jF7uIH%2BSEX6aDHkEyYifLxiRc6bgmbZDinUHUQsFg\
+  Glhx1tjmc%2FOe5Rqeezzt8NLnVVlGujR9jozYmpP%2Fz7jKO%2BgbhZV3swstPqvQY6pgG%2Ba%2\
+  B6WVRyxq6iiNdPoq5sNhbwnadEXF6aLbYoHJWEHuVJbvEA1DBEk1huJNKoTgkX4J3Qiu7s649i0Bf\
+  Rp9dPyZhv34BUk4OSxwz42M6s1y3Is1zd6rqVa%2BeN0qfQIsP0YK33yarKGAeMuB8fzvkWJJvAbn\
+  13GzMMAYb0H9oRroN3kgW2zz47KST8QqDy69qP1min%2F7Zx%2BJw6C5WruEkEgZQ2Tfzmh&X-Amz\
+  -Signature=ad89284c517d14124c7c20077e7431a7ce703c3be2deefe28ffe8e1e28b8bea3&X\
+  -Amz-SignedHeaders=host&x-id=GetObject"
 series:
   - "个人成长"
 authors:
@@ -51,28 +51,27 @@ NOTION_METADATA:
       url: "https://prod-files-secure.s3.us-west-2.amazonaws.com/d7dbc101-82ce-4f96-a\
         e1a-879bd6c9f3a6/8df29788-57a1-45c8-90ed-18d1e1930d3d/habits.jpg?X-Amz-\
         Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-\
-        Credential=ASIAZI2LB466R6C5O2FO%2F20250223%2Fus-west-2%2Fs3%2Faws4_requ\
-        est&X-Amz-Date=20250223T082710Z&X-Amz-Expires=3600&X-Amz-Security-Token\
-        =IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGME\
-        QCIDqFCiIdMTB6NRrAEajlAoO9ZUTs1ppC6BiHLcjTa3q6AiA9Vkc5OZ%2Fxs8YzwMPTfPN\
-        40tWx2z9LbH1TOa8avgp3wyqIBAj%2B%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYz\
-        NzQyMzE4MzgwNSIMyv15j4UCDD6X5vrvKtwDdm9P%2FG4VZTKs0qFIOU5HB%2FU913O74Pw\
-        kh8Ybh9p8Un3rl%2BL2AW9iqwOVHvvGfctg1Ng98pwyvtj1po9poKcP2WphZ8W4WSc7wE9i\
-        vtD2atHZR0vhTO7O%2Fzc1SmlXjzC6UNsvdJXSnWGacC0t2IYwA0VL5VYGyz37Kuv7uIl90\
-        i31g1ofLy7%2FUH%2BnT9ne2m%2F1zUz%2FLAVwKRaxjheirWy7o6atqQ5qy3cfj%2FDCSc\
-        HP0gGBVePy6urrySAjqtPiFqKT4%2B3XHY7Z7YKxM%2B3pYOJL0Hs4x88%2F4x3WYI0CrbQ\
-        3Q516PL5nHnE7hltgrIlGHko3NsdnCYVSAa7AUdKVOATVmhkG5JzB%2Ft3ZTOAvywPs9uo3\
-        xdHoMrXOX2tU6ZUhWZsnOOtuNqYOSeT3KEbFmhOXXr2IFbUh9PmN0wKxpkaEpD5rUj1Lwed\
-        %2FMWQe3T9mo%2BFRuJWAKYHsYPX%2Bo5D5isYruHDM9tVlvtyrprfsfu42I2t650cvVXrn\
-        l%2B7nalG5Rr76I3YwIqcmhmo9SJgyIDy01PJPzBssDIh8tQGspmWja03zo5%2BLLv%2FBj\
-        JuPxvzAHcbqHioqUIICby9T5YJQIvyT8HYwH2OuzMxQ%2FYizzvHCs7GaPHEw4asPRxRaGV\
-        kw0czqvQY6pgGHqLCfUfZg9bNAlo008HhwSmp%2BmvO8DMSFyXNbrJV9gJ2lzjcMPpf0roF\
-        bn9iE6eUJx6Q792jf2YbDnjmenBRNAUt82qj8Nwra%2BANyo2MWDqDmu7GvipDwLybY2dj8\
-        2jRT59ASl%2FEUUt9KpQzIygztR1fGkuctrfdyfsFz01OuOLSNxva4WR3rUU72zxxerAqDC\
-        KQWaTXPQLIas8dlPMOXl29jek4K&X-Amz-Signature=a8e2553608c226015c3e8e6a63e\
-        f692e10c5f87b24a9feb9ed78422f9f8edd8b&X-Amz-SignedHeaders=host&x-id=Get\
-        Object"
-      expiry_time: "2025-02-23T09:27:10.919Z"
+        Credential=ASIAZI2LB466U33XPQRX%2F20250223%2Fus-west-2%2Fs3%2Faws4_requ\
+        est&X-Amz-Date=20250223T092225Z&X-Amz-Expires=3600&X-Amz-Security-Token\
+        =IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGME\
+        QCIDUO9EovgXScoFQ4neQLuUn9%2BUmZtzRp7s8kQdzdLAZ4AiAS0RyYiaJCMZTU%2Fy8%2\
+        F86sUhcHWyLVJSwxDKaJN5kQJ6ir%2FAwgREAAaDDYzNzQyMzE4MzgwNSIMK0tqtlxYirAv\
+        cfYUKtwDEjWNVhIVf0AWeqEPWVcQaRYkxb6VuT6rR8aI5TP5RwnqNssa0SndS2n15YXmVl9\
+        ehzM%2F%2BhAbBWvcnwo9%2Bd5RBLlc%2FZ8TPuFwdskNa4KPoPFpOxdq%2BJP5iRFVpg84\
+        urOvRqlK08eoO49cQasNRP2BxWxS0Hdr%2F2ax6mDZO4%2BWsQzjQlwuaT7fiBn5XKYs1M6\
+        LItQ4sYZF70C%2FWXKsebthb1s6mmsiaNPDN5bGd8mlUm1WUCgfCtWhV%2BkP7qE5rmWT5O\
+        Kc2VzLS3MW%2BA3sgtuH1u5AcRWKFGg9RGw%2Bkzrw8Ii6fNuJMpT6ouKkKnYFX6NFT9giL\
+        aqgg9Bw1Yer4bgaU1b3ZQFVXoZdcvYSf3uVGfZP39E%2BkKOCCKrM5G0Xl7f54684PZpEsr\
+        quugBrboi27NYKxD2jp5W1kEaW%2BQ%2FUdnRgskQJo37DQ80uLhr3I%2B9M4jquWtNUHiH\
+        7osTVt%2F5peIpfVnjmpqQoCHNe8PgoiUpreXY1FP9DEjLVSKxGatUfwbLIFlrEXpCPOh9V\
+        WIDJTS1QYOwFyMFZ1XWYVZvXGlN4LrTg1HE96rWGefQvjoWzF77eiNRd3RuufI1BVyNgE8n\
+        VM73mz1h7thiFLfRZKqeLTWeMPW1xuFb2T2Qw1Z3rvQY6pgGKDZfF69PbZ1srXBdy2Cw9C9\
+        nxO4PNgNyrc1%2BvjSCBmyRUa5jc8LH%2Bel3Ipq9EzkeRAyRR2vmMSH%2B9U5zBareF1TK\
+        xpG2WBXDMWRTYRjn4vdUHScnkO8Dzip8nhxYrUMun7Rr1okGNKSTGZ%2Bo%2FcwvQ8PTwwK\
+        gytgzwqX2ArEfdUDFWe7ZCPtN1%2FCGqFOMianO5OYl0JcEkALGzeNieSq689fGKVisb&X-\
+        Amz-Signature=de4c70adc6761d7cd2cabd1358994da25a4ce40775639daa9ece65bed\
+        86d1d56&X-Amz-SignedHeaders=host&x-id=GetObject"
+      expiry_time: "2025-02-23T10:22:25.579Z"
   icon: null
   parent:
     type: "database_id"
@@ -167,8 +166,8 @@ NOTION_METADATA:
           href: null
   url: "https://www.notion.so/28585cdabe2046d4b23bdface5d3a1fd"
   public_url: "https://kevinchen1994.notion.site/28585cdabe2046d4b23bdface5d3a1fd"
-UPDATE_TIME: "2025-02-23T08:28:48.194Z"
-EXPIRY_TIME: "2025-02-23T09:28:36.120Z"
+UPDATE_TIME: "2025-02-23T09:23:53.547Z"
+EXPIRY_TIME: "2025-02-23T10:23:38.389Z"
 
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
